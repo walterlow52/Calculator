@@ -1,17 +1,17 @@
-result = False;
+result = false;
 for (var i = 0; i < document.querySelectorAll(".numbers").length; i++) {
   number[i].addEventListener("click", function(e) {
     var currentString = document.getElementById("input").innerHTML;
     var last_ch = currentString[currentString.length-1];
-    if (result === False) {
+    if (result === false) {
       document.getElementById("input").innerHTML += e.target.innerHTML;
     }
-    else if (result === True && last_ch === "+" || last_ch === "-" || last_ch === "x" || last_ch === "/") {
-      result = False;
+    else if (result === true && last_ch === "+" || last_ch === "-" || last_ch === "x" || last_ch === "/") {
+      result = false;
       document.getElementById("input").innerHTML += e.target.innerHTML;
     }
     else {
-      result = False;
+      result = false;
       document.getElementById("input").innerHTML = "";
       document.getElementById("input").innerHTML += e.target.innerHTML;
     }
