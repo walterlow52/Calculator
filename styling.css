@@ -73,7 +73,7 @@ body {
 }
 
 #result {
-  display: inline-block;
+  /*display: inline-block;*/
   border: 1px solid cyan;
   border-radius: 1px;
   width: 17px;
