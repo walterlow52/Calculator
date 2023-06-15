@@ -34,7 +34,7 @@ for (var i = 0; i < document.querySelectorAll(".operators").length; i++) {
     }
   });
 }
-document.getElementById('result').addEventListener("click", function() {
+document.getElementById("result").addEventListener("click", function() {
   var inputString = document.getElementById("input").innerHTML;
   var nums = inputString.split(/\+|\-|\x|\//g);
   var operators = inputString.replace(/[0-9]|\./g, "").split("");
